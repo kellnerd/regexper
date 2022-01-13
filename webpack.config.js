@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -10,10 +9,12 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: path.join(__dirname, './build'),
-    filename: '[name]-[contenthash].js'
+    filename: '[name]-[contenthash].js',
+    clean: {
+      keep: /\.git/,
+    },
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         { from: './static' }

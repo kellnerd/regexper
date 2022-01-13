@@ -1,5 +1,14 @@
 [
   {
+    "label": "January 13, 2022 Release",
+    "changes": [
+      "Support regex lookbehinds and named groups",
+      "Use Ctrl-Enter to display the expression",
+      "Upgraded most dependencies",
+      "Updated links and usage of relative instead of absolute paths"
+    ]
+  },
+  {
     "label": "September 5, 2020 Release",
     "changes": [
       "Updating build system to use only webpack.",

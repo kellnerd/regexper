@@ -14,6 +14,7 @@
     "pretest": "eslint .",
     "test": "karma start --single-run",
     "build": "webpack",
+    "gh-pages": "webpack && cd build && git add -A && git commit && git push",
     "start": "webpack-dev-server"
   },
   "devDependencies": {

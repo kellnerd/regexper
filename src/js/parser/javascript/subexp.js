@@ -47,7 +47,7 @@ export default {
   // Returns the label for the subexpression.
   label() {
     const capture = this.properties.capture;
-    const groupName = capture.properties && capture.properties.group_name.textValue;
+    const groupName = capture.properties?.group_name.textValue;
     if (capture.textValue in this.labelMap) {
       return this.labelMap[capture.textValue];
     } else if (groupName) {

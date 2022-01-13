@@ -51,7 +51,7 @@ export default {
     if (capture.textValue in this.labelMap) {
       return this.labelMap[capture.textValue];
     } else if (groupName) {
-      return `group "${groupName}"`;
+      return `group #${this.state.groupCounter++} "${groupName}"`;
     } else {
       return `group #${this.state.groupCounter++}`;
     }

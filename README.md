@@ -1,6 +1,6 @@
 # Regexper
 
-Code for the http://regexper.com/ site.
+Code for the https://regexper.com/ site.
 
 ## Contributing
 

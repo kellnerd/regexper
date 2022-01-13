@@ -10,7 +10,7 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     path: path.join(__dirname, './build'),
-    filename: '[name]-[hash].js'
+    filename: '[name]-[contenthash].js'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -44,7 +44,7 @@ module.exports = {
       date: new Date().toISOString()
     }),
     new MiniCssExtractPlugin({
-      filename: '[name]-[hash].css'
+      filename: '[name]-[contenthash].css'
     })
   ],
   module: {

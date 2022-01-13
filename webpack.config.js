@@ -69,7 +69,7 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        loaders: [
+        use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'

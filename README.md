@@ -1,6 +1,7 @@
 # Regexper
 
-Code for the https://regexper.com/ site.
+Code for the [Regular Expression Visualization Site](https://kellnerd.github.io/regexper/) with support for additional regex features (see the [changelog](https://kellnerd.github.io/regexper/changelog.html) since 2022).
+Based on the latest version of the original site https://regexper.com/ from [GitLab](https://gitlab.com/javallone/regexper-static).
 
 ## Contributing
 

@@ -26,7 +26,9 @@ export default {
   labelMap: {
     '?:': '',
     '?=': 'positive lookahead',
-    '?!': 'negative lookahead'
+    '?!': 'negative lookahead',
+    '?<=': 'positive lookbehind',
+    '?<!': 'negative lookbehind'
   },
 
   // Renders the subexp into the currently set container.

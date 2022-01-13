@@ -24,8 +24,8 @@ export default class Regexper {
 
   // Event handler for key presses in the regular expression form field.
   keypressListener(event) {
-    // Pressing Shift-Enter displays the expression.
-    if (event.shiftKey && event.keyCode === 13) {
+    // Pressing Ctrl-Enter displays the expression.
+    if (event.ctrlKey && event.keyCode === 13) {
       event.returnValue = false;
       if (event.preventDefault) {
         event.preventDefault();
